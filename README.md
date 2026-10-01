@@ -1,6 +1,6 @@
 # Currency Exchange Data Pipeline
 
-## 📌 Executive Summary
+##  Executive Summary
 This project is an automated, end-to-end ETL (Extract, Transform, Load) data pipeline that fetches daily currency exchange rates from the Frankfurter API and processes them into a business-ready Microsoft SQL Server database. 
 
 Designed with a **Medallion Architecture** (Bronze, Silver, Gold), the project demonstrates data engineering principles, including API integration, robust error handling, dimensional modeling, and the strategic delegation of transformations between Python and SQL.
@@ -13,7 +13,7 @@ Designed with a **Medallion Architecture** (Bronze, Silver, Gold), the project d
 
 ---
 
-## 🏗️ Pipeline Architecture & Logic
+##  Pipeline Architecture & Logic
 
 ### 1. Bronze Layer (Raw Data Ingestion)
 **Logic:** Acts as an immutable audit log. Python extracts data via the Frankfurter API and appends the raw JSON payload along with metadata (`fetch_date`, `inserted_at`) directly into the database.
@@ -38,5 +38,5 @@ Designed with a **Medallion Architecture** (Bronze, Silver, Gold), the project d
 
 ---
 
-## ⚙️ Orchestration
+##  Orchestration
 The pipeline is fully automated using Python's `schedule` library. A master orchestrator script runs continuously on a server, triggering the incremental extraction and Silver transformation steps daily at 03:00 UTC (8:00 AM UTC+5), ensuring stakeholders have fresh metrics before the start of the business day.
