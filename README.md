@@ -5,7 +5,7 @@ This project is an automated, end-to-end ETL (Extract, Transform, Load) data pip
 
 Designed with a **Medallion Architecture** (Bronze, Silver, Gold), the project demonstrates data engineering principles, including API integration, robust error handling, dimensional modeling, and the strategic delegation of transformations between Python and SQL.
 
-## 🛠️ Technology Stack & Skills Demonstrated
+##  Technology Stack & Skills Demonstrated
 *   **Languages:** Python, T-SQL
 *   **Database:** Microsoft SQL Server (SSMS)
 *   **Libraries:** `requests` (API extraction), `pyodbc` (database connectivity), `schedule` (orchestration), `pytest` (unit testing), `logging`, `tenacity` (retry logic)
